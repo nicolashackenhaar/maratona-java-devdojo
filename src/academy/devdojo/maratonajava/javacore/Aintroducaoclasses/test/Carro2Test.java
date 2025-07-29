@@ -15,8 +15,9 @@ public class Carro2Test {
         carro2.modelo = "c180";
         carro2.ano = 2014;
 
-        System.out.println(carro1.nome+ " "+carro1.modelo+" "+carro1.ano);
-        System.out.println(carro2.nome+ " "+carro2.modelo+" "+carro2.ano);
+
+        System.out.println("carro1: "+carro1.nome+ " "+carro1.modelo+" "+carro1.ano);
+        System.out.println("carro2: "+carro2.nome+ " "+carro2.modelo+" "+carro2.ano);
 
     }
 }
