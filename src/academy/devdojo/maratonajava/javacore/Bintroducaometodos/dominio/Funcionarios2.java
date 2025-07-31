@@ -2,12 +2,14 @@ package academy.devdojo.maratonajava.javacore.Bintroducaometodos.dominio;
 
 public class Funcionarios2 {
     public String nome;
+    public int idade;
     public double[] salarios;
     public double media;
 
 
     public void impresora() {
         System.out.println(this.nome);
+        System.out.println("idade "+this.idade);
         System.out.print("Salários: ");
         imprimeSalarios();
         media();
