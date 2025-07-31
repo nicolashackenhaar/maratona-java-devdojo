@@ -4,26 +4,26 @@ public class Funcionarios2 {
     public String nome;
     public int idade;
     public double[] salarios;
-    public double media;
-
 
     public void impresora() {
         System.out.println(this.nome);
-        System.out.println("idade "+this.idade);
-        System.out.print("Salários: ");
+        System.out.println("idade " + this.idade);
+        if (salarios == null) {
+            System.out.println("Insira os ultimos 3 salarios.");
+            return;
+        }
         imprimeSalarios();
-        media();
-
-
+        imprimeMedia();
     }
 
     public void imprimeSalarios() {
+        System.out.print("Salários: ");
         for (double salario : salarios) {
             System.out.print(salario + ", ");
         }
     }
 
-    public void media() {
+    public void imprimeMedia() {
         double soma = 0;
 
         for (int i = 0; i < salarios.length; i++) {
